@@ -2,9 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+## Tired of setting up your nextjs14 app every time you start a new project?
+
+# This package got you covered with basic setup of everything you need to get started with developing production app...
+
+# use just below few command and you are good to go.
 
 ```bash
+npm i create-next-shadcn-app <your project name>
+
 npm run dev
 # or
 yarn dev
@@ -13,6 +19,10 @@ pnpm dev
 # or
 bun dev
 ```
+
+This Nextjs14 setup includes NextJs@14.2.3, Shadcn, Redux Toolkit, Husky, Eslint, Tailwind...
+
+or you can directly clone the repository from [https://github.com/csagar131/next14-shadcn]
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
