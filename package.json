@@ -1,7 +1,7 @@
 {
-  "name": "samsung-fe",
+  "name": "next-shadcn-boilerplate",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -46,5 +46,8 @@
     "typescript": "^5",
     "typescript-eslint": "^7.9.0",
     "husky": "^8.0.0"
+  },
+  "bin": {
+    "create-next-shadcn-app": "./generate-app.js"
   }
 }
