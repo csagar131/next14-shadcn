@@ -43,7 +43,9 @@ async function main() {
     execSync("npx rimraf ./.git");
     fs.rmdirSync(path.join(projectPath, "bin"), { recursive: true });
 
-    console.log("The installation is done, this is ready to use !");
+    console.log(
+      "The installation is done, this is ready to use !, packages installed nextjs14.2.3, shadcn, husky, redux-toolkit, docker... "
+    );
   } catch (error) {
     console.log(error);
   }
