@@ -6,6 +6,7 @@ export const sampleApi = createApi({
   baseQuery: axiosBaseQuery({
     baseUrl: "https://jsonplaceholder.typicode.com",
   }),
+  refetchOnMountOrArgChange: true,
   endpoints: (builder) => ({
     updateData: builder.mutation<any, any>({
       query: (body) => ({

@@ -1,7 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
 import { sampleApi } from "./features/services/apiSlices/sample.api";
+
+import storageSession from "redux-persist/lib/storage/session";
 import { counterReducer } from "./features/counter";
 
 const rootReducer = combineReducers({
@@ -9,9 +10,26 @@ const rootReducer = combineReducers({
   counter: counterReducer,
 });
 
+const createNoopStorage = () => {
+  return {
+    getItem(_key: unknown) {
+      return Promise.resolve(null);
+    },
+    setItem(_key: unknown, value: unknown) {
+      return Promise.resolve(value);
+    },
+    removeItem(_key: unknown) {
+      return Promise.resolve();
+    },
+  };
+};
+
+const storage =
+  typeof window !== "undefined" ? storageSession : createNoopStorage();
+
 const persistConfig = {
   key: "root",
-  storage,
+  storage: storage,
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
