@@ -2,11 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-## Tired of setting up your nextjs14 app every time you start a new project?
+### Tired of setting up your nextjs14 app every time you start a new project?
 
-# This package got you covered with basic setup of everything you need to get started with developing production app...
+#### This package got you covered with basic setup of everything you need to get started with developing production app...
 
-# use just below few command and you are good to go.
+#### use just below few command and you are good to go.
 
 ```bash
 npm i create-next-shadcn-app <your project name>
