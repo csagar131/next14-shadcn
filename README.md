@@ -1,22 +1,24 @@
+# Next.js 14 - Shadcn App Starter
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## 🚀 Getting Started
 
-### Tired of setting up your nextjs14 app every time you start a new project?
+### Tired of setting up your Next.js 14 app every time you start a new project?
 
-#### This package got you covered with basic setup of everything you need to get started with developing production app...
+#### This package has got you covered with a basic setup that includes everything you need to start developing a production-ready app.
 
-#### use just below few command and you are good to go.
+### Quick Start
+
+Simply run the following commands to get your project up and running:
 
 ```bash
-npm i create-next-shadcn-app <your project name>
-
+npx create-next-shadcn-app <your-project-name>
 npm run dev
-# or
+
+# OR, using alternative package managers:
 yarn dev
-# or
 pnpm dev
-# or
 bun dev
 ```
 

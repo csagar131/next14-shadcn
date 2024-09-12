@@ -1,6 +1,6 @@
 {
   "name": "create-next-shadcn-app",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A CLI to create a Next.js app with Shadcn UI",
   "main": "index.js",
   "private": false,
