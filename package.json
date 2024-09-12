@@ -1,6 +1,8 @@
 {
   "name": "create-next-shadcn-app",
   "version": "0.1.2",
+  "description": "A CLI to create a Next.js app with Shadcn UI",
+  "main": "index.js",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -47,7 +49,10 @@
     "typescript-eslint": "^7.9.0",
     "husky": "^8.0.0"
   },
-  "bin": {
-    "create-next-shadcn-app": "./generate-app.js"
-  }
+   "bin": {
+    "create-next-shadcn-app": "./index.js"
+  },
+  "keywords": ["nextjs", "shadcn", "create", "cli"],
+  "author": "Sagar Mochi",
+  "license": "MIT"
 }
